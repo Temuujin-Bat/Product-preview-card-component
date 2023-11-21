@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(158, 36%, 37%);
+  --main-background-color: hsl(30, 38%, 92%);
+  --background-color: hsl(0, 0%, 100%);
+  --text-color: hsl(228, 12%, 48%);
+  --heading-color: hsl(212, 21%, 14%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+}
+
+.container-1 {
+  display: flex;
+  width: 600px;
+  height: 450px;
+}
+
+.left-1 {
+  flex: 1;
+  width: 50%;
+}
+
+.image {
+  height: 100%;
+}
+
+.right-1 {
+  flex: 1;
+  width: 50%;
+  background-color: var(--background-color);
+  padding: 30px 25px;
+}
+
+.perfume {
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.gabrielle {
+  margin-top: 26px;
+  font-family: "Fraunces", serif;
+  color: var(--heading-color);
+  font-size: 36px;
+  line-height: 1;
+}
+
+.floral {
+  margin-top: 20px;
+  width: 220px;
+}
+
+.price {
+  position: relative;
+}
+
+.price-1 {
+  display: inline-block;
+  position: relative;
+  font-family: "Fraunces", sans-serif;
+  top: 26px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.price-2 {
+  display: inline-block;
+  position: absolute;
+  top: 41px;
+  left: 165px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.btn {
+  position: relative;
+  margin-top: 54px;
+  padding: 20px 86px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(228, 45%, 44%);
+}
+
+.btn-text {
+  font-size: 12px;
+}
+
+footer {
+  position: absolute;
+  bottom: 40px;
+}
+
+@media (max-width: 660px) {
+  .container-1 {
+    flex-direction: column;
+    width: 343px;
+    height: 611px;
+  }
+
+  .left-1 {
+    width: 100%;
+    height: 240px;
+  }
+
+  .image {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .right-1 {
+    width: 100%;
+    height: 371px;
+  }
+
+  .gabrielle {
+    font-size: 28px;
+  }
+
+  .floral {
+    font-size: 14px;
+    width: 290px;
+  }
+
+  .btn {
+    margin-top: 40px;
+    width: 290px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
